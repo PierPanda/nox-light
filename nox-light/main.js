@@ -1,6 +1,5 @@
-import './style.css'
-// import * as THREE from 'three.js';
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js';
+import * as THREE from 'three';
+import { gsap } from 'gsap';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -31,7 +30,7 @@ function init() {
 
 
   loader.load(
-    '../assets/V6.glb', (gltf) => {
+    './public/assets/V6.glb', (gltf) => {
       model = gltf.scene;
       model.scale.setScalar(1);
       scene.add(model);
@@ -256,7 +255,7 @@ const image = document.querySelector('.product__image');
 color1.addEventListener('click', () => {
   color1.classList.add('active');
   color2.classList.remove('active');
-  image.style.backgroundImage = 'url(../../assets/images/photo-product/nox-silver.png)';
+  image.style.backgroundImage = "url('nox-light/public/assets/nox-silver.png')";
   image.style.backgroundSize = 'contain';
   image.style.backgroundPosition = 'center';
   image.style.backgroundRepeat = 'no-repeat';
@@ -265,7 +264,7 @@ color1.addEventListener('click', () => {
 color2.addEventListener('click', () => {
   color1.classList.remove('active');
   color2.classList.add('active');
-  image.style.backgroundImage = 'url(../../assets/images/photo-product/nox-black.png)';
+  image.style.backgroundImage = "url('nox-light/public/assets/nox-black.png')";
   image.style.backgroundSize = 'contain';
   image.style.backgroundPosition = 'center';
   image.style.backgroundRepeat = 'no-repeat';
