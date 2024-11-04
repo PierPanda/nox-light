@@ -30,7 +30,7 @@ function init() {
 
 
   loader.load(
-    './public/assets/V6.glb', (gltf) => {
+    'public/assets/V6.glb', (gltf) => {
       model = gltf.scene;
       model.scale.setScalar(1);
       scene.add(model);
@@ -255,7 +255,8 @@ const image = document.querySelector('.product__image');
 color1.addEventListener('click', () => {
   color1.classList.add('active');
   color2.classList.remove('active');
-  image.style.backgroundImage = "url('nox-light/public/assets/nox-silver.png')";
+  image.style.backgroundImage = "url('public/assets/nox-silver.png')";
+  image.style.backgroundSize = 'cover';
   image.style.backgroundSize = 'contain';
   image.style.backgroundPosition = 'center';
   image.style.backgroundRepeat = 'no-repeat';
@@ -264,7 +265,7 @@ color1.addEventListener('click', () => {
 color2.addEventListener('click', () => {
   color1.classList.remove('active');
   color2.classList.add('active');
-  image.style.backgroundImage = "url('nox-light/public/assets/nox-black.png')";
+  image.style.backgroundImage = "url('public/assets/nox-black.png')";
   image.style.backgroundSize = 'contain';
   image.style.backgroundPosition = 'center';
   image.style.backgroundRepeat = 'no-repeat';
