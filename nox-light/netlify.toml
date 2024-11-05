@@ -1,5 +1,7 @@
-[
-  build
-]
-  command = "npm install && npm run build"
+[build]
+  base = "/"
+  command = "npm ci && npm run build"  # npm ci est plus strict que npm install
   publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
