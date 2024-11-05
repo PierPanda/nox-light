@@ -116,6 +116,7 @@ function init() {
 // }
 
 // OPTION 2
+
 function setupScrollAnimation() {
 
   model.position.set(3.5, -3, 0);
