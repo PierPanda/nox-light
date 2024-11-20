@@ -4,6 +4,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    chunkSizeWarningLimit: 2000,
   },
-  assetsInclude: ['**/*.glb']
-})
+  assetsInclude: ['**/*.glb'],
+});

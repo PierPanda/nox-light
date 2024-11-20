@@ -1,7 +1,8 @@
 [build]
-  command = "npx vite build"
+  command = "npx vite build --debug"
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "20.18"
+  NODE_VERSION = "22.9.0"
   NPM_FLAGS = "--no-audit --no-fund"
+  NETLIFY_USE_CACHE = "false"
