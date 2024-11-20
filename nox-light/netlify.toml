@@ -1,5 +1,5 @@
 [build]
-  command = "npx vite build --debug"
+  command = "vite build --debug"
   publish = "dist"
 
 [build.environment]
