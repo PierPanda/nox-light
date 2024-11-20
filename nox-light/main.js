@@ -29,7 +29,6 @@ function init() {
 
   const loader = new GLTFLoader();
 
-
   loader.load(
     '/public/assets/V6.glb', (gltf) => {
       model = gltf.scene;
