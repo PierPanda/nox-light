@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+// import myGLB from '/public/assets/V6.glb';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +31,7 @@ function init() {
 
 
   loader.load(
-    'public/assets/V6.glb', (gltf) => {
+    '/public/assets/V6.glb', (gltf) => {
       model = gltf.scene;
       model.scale.setScalar(1);
       scene.add(model);
