@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  root: './path/to/your/index.html',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    chunkSizeWarningLimit: 2000,
   },
   assetsInclude: ['**/*.glb'],
 });
