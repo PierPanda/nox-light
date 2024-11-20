@@ -1,8 +1,8 @@
 [build]
-  command = "npm run build --debug"
+  command = "npm install && vite build"
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "22.9.0"
+  NODE_VERSION = "20.18.0"
   NPM_FLAGS = "--no-audit --no-fund"
   NETLIFY_USE_CACHE = "false"
