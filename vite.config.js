@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: '.',
   base: '/',
   build: {
     outDir: 'dist',
@@ -10,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['three'],
+          vendor: ['three', 'lodash'],
         },
       },
     },
