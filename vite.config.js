@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['three', 'lodash'],
+          vendor: ['three'],
         },
       },
     },
