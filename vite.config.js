@@ -5,12 +5,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    assetsDir: './public/assets',
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      }
-    }
+    assetsDir: './public/assets'
   },
   assetsInclude: ['**/*.glb'],
 });
